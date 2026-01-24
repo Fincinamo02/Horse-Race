@@ -12,7 +12,7 @@ horse4 = 0
 
 start = input("Start race (y/n) : ")
 if start == "n" or start == "N":
-    print("bruh")
+    print("Exiting program...")
 elif start == "y" or start == "Y":
     print("The race has started!")
     
