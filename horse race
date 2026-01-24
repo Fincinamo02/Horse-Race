@@ -1,0 +1,58 @@
+import random
+
+horse1_level = random.randint(1, 20)
+horse2_level = random.randint(1, 20)
+horse3_level = random.randint(1, 20)
+horse4_level = random.randint(1, 20) 
+
+horse1 = 0
+horse2 = 0
+horse3 = 0
+horse4 = 0
+
+start = input("Start race (y/n) : ")
+if start == "n" or start == "N":
+    print("bruh")
+elif start == "y" or start == "Y":
+    print("The race has started!")
+    
+    while True:
+        opportunity = random.randint(1,20)
+        
+        if horse1_level >= opportunity:
+            horse1 = horse1 + 1
+            print("Horse 1 has advanced once, (",horse1,"/10)")
+        else:
+            pass
+        
+        if horse2_level >= opportunity:
+            horse2 = horse2 + 1
+            print("Horse 2 has advanced once, (",horse2,"/10)")
+        else:
+            pass
+        
+        if horse3_level >= opportunity:
+            horse3 = horse3 + 1
+            print("Horse 3 has advanced once, (",horse3,"/10)")
+        else:
+            pass
+        
+        if horse4_level >= opportunity:
+            horse4 = horse4 + 1
+            print("Horse 4 has advanced once, (",horse4,"/10)")
+        else:
+            pass
+        
+        if horse1 == 10:
+            print("The race is over! Horse 1 wins!!!")
+            break
+        elif horse2 == 10:
+            print("The race is over! Horse 2 wins!!!")
+            break
+        elif horse3 == 10:
+            print("The race is over! Horse 3 wins!!!")
+            break
+        elif horse4 == 10:
+            print("The race is over! Horse 4 wins!")
+            break
+            
